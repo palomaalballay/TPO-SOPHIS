@@ -1,0 +1,818 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  background-image: url(./img/fondo-abstracto.png);
+  min-height: 100vw;
+  min-width: 100vw;
+  margin:0;
+}
+
+
+/*__________________________________________________________________________________________*/
+/* COMIENZO - CSS para formulario de contacto */
+
+.formulario {
+	max-width: 60%;
+	margin-left: 10%;
+	margin-top: -15%;
+	padding: 10%;
+	border-radius: 50%;
+	font-family: "Poppins",sans-serif;
+	font-size: large;
+  color: rgb(100, 100, 100);
+}
+
+.field {
+	padding: 4%;
+}
+
+input[type=text],input[type=email], textarea {
+	width: 90%;
+	text-align: left;
+	margin: 10px;
+	padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing:content-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize:vertical;
+	font-family: "Poppins",sans-serif;
+	font-size: small;
+}
+textarea {
+	text-align: left;
+	font-family: "Poppins",sans-serif;
+	font-size: small;
+}
+
+input[type=submit] {
+  background-color: rgb(33, 130, 130);
+	font-family: "Poppins",sans-serif;
+	font-size: small;
+  color: white;
+	margin-left: 86%;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=enviar]:hover {
+  background-color: #45a049;
+}
+
+.contacto {
+	margin-top: -10%;
+	margin-left: -10%;
+
+}
+
+
+/*__________________________________________________________________________________________*/
+/* CSS para footer */
+
+footer {
+	background-color: rgba(221,160,221, 0.26);
+	padding: 2%;
+	grid-gap: 40px;
+}
+
+.contenedor .footer {
+	grid-area: footer;
+	padding-top: 50%;
+}
+
+.redes-sociales {
+	position: relative;
+	margin-left: 36.5%;
+	box-sizing: border-box;
+}
+
+.fa:hover {
+  opacity: 0.1;
+}
+
+.btn {
+	text-decoration: none;
+}
+
+.fa-brands {
+	background-color: black;
+	color: #fff;
+  padding: 12px;
+	font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-envelope {
+	background-color: black;
+	color: #fff;
+  padding: 12px;
+	font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.newsletter {
+	width: 70%;
+	height: 6rem;
+	padding-top: 5%;
+	margin-left: 14%;
+	text-align: center;	
+}
+
+.newsdiario {
+	margin-left: 2%;
+	text-align:center;
+	font-size: 12px;
+}
+
+.copyright {
+	margin-top: 7%;
+	width: 70%;
+	margin-left: 10%;
+	text-align: left;
+	font-family: "Poppins",sans-serif;
+	font-size: small;
+  color: rgb(100, 100, 100);
+}
+
+
+
+/*_________________________________________________________________________________________*/
+
+.contenedor {
+  min-width: 95%;
+	max-width: 1000px;
+	padding: 20px;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 	"header header header"
+						 						"principal principal principal"
+						 						"footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .principal,
+.contenedor .footer {
+	
+	padding: 10px;
+	border-radius: 4px;
+}
+
+/*__________________________________________________________________________________________*/
+/* CSS para header */
+
+.contenedor .header {
+	background-color: transparent;
+	grid-area: header;
+}
+
+.header .marca {
+  font-family: "rufina",serif;
+  font-size: 1.8rem;
+  text-align: center;
+	color: rgb(33, 130, 130);
+  padding: 1rem;
+}
+
+.marca {
+position: relative;
+}
+
+.header .p1 {
+  text-align: center;
+  font-family: 'Comme', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+  padding: 1.5rem;
+}
+
+.btn-outline {
+left: 0%;
+bottom: 0%;
+font-size: 0%;
+margin-left: 85%;
+position: fixed;
+top: 0%;
+}
+
+.fa-house {
+	background-color: rgba(221,160,221, 0.26);
+	color: rgb(33,130,130);
+  padding: 15px;
+	font-size: 15px;
+  border-radius: 75%;
+  margin-top: 80%;
+}
+
+
+/*_________________________________________________________________________________________*/
+/* Styles de asientos y cascos */
+
+/* GOOGLE-FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@500&family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@700&display=swap');
+
+.contenedor1 {
+	min-width: 95%;
+	max-width: 1000px;
+	margin: 20px;
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+
+}
+
+.contenedor1 .footer {
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.separador {
+    padding: 0%;
+    border-top: solid rgb(200, 200, 200);
+    width: 100%;
+    height: .0063rem;
+    border-width: .125rem;
+}
+
+.asientos-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.asientos-titulo {
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Prompt', sans-serif;
+    color: rgb(90, 90, 90);
+	padding: 4%;
+	text-align: center;
+
+}
+
+.asientos-descrip {
+    margin-bottom: 3rem;
+    font-family: 'Comme', sans-serif;
+    font-weight: 700;
+    color: rgb(90, 90, 90);
+    text-align: center;
+}
+
+.tres-asientos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-Asi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(252, 252, 251, 0.647);
+    border: solid rgb(33, 130, 130);
+    border-width: .125rem;
+    border-radius: 20%;
+    padding: .625rem;
+}
+
+.link-interno {
+  margin-left: 4.5rem;
+  margin-top: 0.5rem;
+}
+
+.link-serfas {
+  margin-left: 3.6rem;
+  margin-top: 0.5rem;
+}
+
+.link-giro {
+  margin-left: 3.8rem;
+  margin-top: 0.5rem;
+}
+
+.link-tonic {
+  margin-left: 4.4rem;
+  margin-top: 0.5rem;
+}
+
+.link-compact {
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+}
+
+.icono-serfas {
+  margin-top: 2rem;
+}
+
+.icono-selle {
+  margin-top: 4rem;
+}
+
+.icono-fizik {
+  margin-top: 2.6rem;
+}
+
+.icono-giro {
+  margin-top: 2.5rem;
+}
+
+.icono-tonic {
+  margin-top: 4rem;
+}
+
+.icono-compact {
+  margin-top: 2.8rem;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+}
+
+.sup {
+    display: flex;
+    padding: .625rem;
+    margin-top: 1.25rem;
+}
+
+.sup-nombre {
+    position: relative;
+    justify-content: flex-start;
+    margin-left: 5rem;
+    font-family: 'Comme', sans-serif;
+    color: rgb(33, 130, 130);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.mercado-libre {
+    position: relative;
+    left: 25rem;
+}
+
+.mercado-libre :hover {
+    cursor: pointer;
+    background-color: rgb(151, 224, 223);
+    color: rgb(11, 73, 73);
+}
+
+.boton-compra {
+    position: relative;
+    right: 6.25rem;
+    padding: 1rem;
+    border: none;
+    border-radius: .3125rem;
+    background-color: rgba(33, 130, 130, 0.51);
+    min-width: 17.3rem;
+    height: 2rem;
+    color: white;
+    font-family: 'Comme', sans-serif;
+    font-size: 1.25rem;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    animation: pulso 1.8s infinite;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(33, 130, 130, .5) ;
+    }
+    70% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 15px rgba(33, 130, 130, 0) ;
+    }
+    100% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(33, 130, 130, 0) ;
+    }
+}
+
+.btn-selle {
+  margin-left: 11rem;
+}
+
+.btn-fizik {
+  margin-left: 4rem;
+}
+
+.btn-compact {
+    margin-left: 9.375rem;
+}
+
+.btn-tonic {
+    margin-left: 7.7rem;
+}
+
+.med {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3.125rem;
+    margin-left: 3rem;
+    margin-top: 1.875rem
+    
+}
+
+.info {
+    font-family: 'Comme', sans-serif;
+    color: rgb(90, 90, 90);
+    background-color: rgba(255, 255, 255, 0.473);
+    border: none;
+    border-radius: 60%;
+}
+
+.p-info {
+    width: 40rem;
+	margin: 1rem;
+	text-align: justify;
+
+}
+
+.p-ficha {
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.ficha-tecnica {
+    background-color: rgba(255, 255, 255, 0.549);
+    border: solid  rgb(33, 130, 130);
+    border-radius: 1.875rem;
+    border-width: .0938rem;
+    font-family: 'Prompt', sans-serif;
+    max-width: 35rem;
+    max-height: 25rem;
+	text-align: justify;
+	padding: 2rem;
+	margin: 1rem;
+}
+
+.foto-asiento {
+  margin-left: 1.5rem;
+}
+
+.inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inf-vid {
+    margin-top: 1.875rem;
+    width: 80%;
+    margin-top: 3.125rem;   
+}
+
+
+/*__________________________________________________________________________________________*/
+
+
+
+.dropbtn {
+    background-color:transparent;
+    position: relative;
+    display: flex;
+    margin-left: 15px;
+    letter-spacing: 3px;
+    color: rgb(157, 0, 248);
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #bcd5e4;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+    background-color: #a6d7f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+
+
+
+/*____________________________ HOME EN DISPLAY FLEX: ___________________________________________________*/
+
+.contenedor-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-home .header {
+	background-color: transparent;
+	grid-area: header;
+}
+
+.contenedor-home .marca {
+  font-family: "rufina",serif;
+  font-size: 1.8rem;
+  text-align: center;
+	color: rgb(33, 130, 130);
+  padding: 1rem;
+  position: relative;
+}
+
+.contenedor-home .p1 {
+  text-align: center;
+  font-family: 'Comme', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+  padding: 1.5rem;
+}
+
+.contenedor-home .principal {
+  margin-top: 1.25rem;
+	grid-area: principal;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+      "topp topp topp"
+      "midle midle midle"
+      "botomm botomm botomm";
+  grid-template-rows: 150px 350px 200px;
+}
+
+.top {
+  grid-area: topp;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.midle {
+  grid-area: midle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .625rem;
+}
+
+.ilustracion_img {
+  position: relative;
+  margin-right: 3rem;
+
+}
+
+.bottom {
+  grid-area: botomm;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.links {
+	text-decoration:none;
+  position: relative;
+  margin-left: 1rem;
+	font-family: "Poppins",sans-serif;
+	font-size: medium;
+	font-weight: 800;
+	color:rgb(33,130,130);
+  margin-bottom: 1.25rem;
+}
+
+.iconos {
+	position: absolute;
+  background-color: rgba(255, 255, 255, 0.734);
+	border: solid rgb(33, 130, 130);
+  width: 4rem;
+  height: 4rem;
+	padding: 0.9%;
+	border-radius: 50%;
+	border-width: 0.125rem;
+}
+
+
+.footer-home {
+  min-width: 100vw;
+  grid-area: footer;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0;
+}
+
+
+
+/*_____________________________MEDIA QUERIES: ______________________________________________________*/
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+  
+  .contenedor-home .principal {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "topp midle botomm"
+        "topp midle botomm";
+    grid-template-rows: 50% 50%;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.25rem;
+    margin-left: 65%;
+    gap: 6rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.25rem;
+    margin-right: 65%;
+    gap: 6rem;
+  }
+
+  .contenedor-home .modulos-sup .links {
+    position: relative;
+    top: 15px;
+  }
+
+  .contenedor-home .modulos-bot .links {
+    position: relative;
+    top: 15px;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+
+  .contenedor-home {
+          min-width: 100%;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: 15rem 40rem 30rem;
+          grid-template-areas:
+              "header"
+              "principal"
+              "footer";
+  }
+  
+  .p1 {
+      margin-top: 5%;
+  }
+
+  .contenedor-home .principal {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows:50% 50%;
+      grid-template-areas:
+          "topp"
+          "bottomm";
+      grid-area: principal;
+  }
+
+  .midle {
+      visibility: hidden;
+  }
+  
+  .principal .top {
+      grid-area: topp;
+      margin-left: 9.2%;
+      width: 80%;
+      align-self: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      gap:2rem;
+  }
+  
+  .links{
+      position: initial;
+      color: white;
+      margin-left: 0;
+      font-family: 'Prompt', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      text-decoration: none;
+      letter-spacing: .1875rem;
+  }
+  .iconos {
+      visibility: hidden;
+  }
+  .modulos-sup {
+      background-color: rgba(68, 138, 138, 0.662);
+      border-radius: 2rem;
+      color: white;
+      padding: .3125rem;
+      gap: 2rem;
+      min-width: 300px;
+  }
+
+  .modulos-bot {
+    position: relative;
+    background-color: rgba(68, 138, 138, 0.662);
+    border-radius: 2rem;
+    color: white;
+    padding: .3125rem;
+    gap: 2rem;
+    min-width: 300px;
+    right: 21rem;
+    bottom: 26rem;
+  }
+
+  .principal .bottom {
+    position: relative;
+    grid-area: botomm;
+    max-width: 18.75rem;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    gap:2rem;
+  }
+
+  .footer-home {
+    min-width: 100vw;
+    grid-area: footer;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 0;
+  }
+
+  .footer-home .redes-sociales {
+    position: relative;
+    right: 4.5rem;
+    margin-top: 1.8%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    gap: 0.625rem;
+    box-sizing: border-box;
+  }
+
+  .footer-home .newsletter {
+    position: relative;
+    right: 4.5rem;
+    width: 100%;
+    height: 6rem;
+    padding-top: 5%;
+    margin-left: 14%;
+    text-align: center;
+}
+
+.footer-home .copyright {
+  margin-top: 5rem;
+  padding: 1rem;
+  position: relative;
+  right: 3rem;
+  width: 100%;
+  text-align: left;
+  font-family: "Poppins",sans-serif;
+  font-size: small;
+  color: rgb(100, 100, 100);
+}
+}

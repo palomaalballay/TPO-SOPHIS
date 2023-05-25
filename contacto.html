@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/0db9b27398.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/favicon1.png">
+  <title>Contactos</title>
+</head>
+
+<body>
+  <div class="contenedor">
+  <header class="header">
+    <a class="btn btn-outline btn-floating" href="index.html" role="button">.
+      <i class="fa-solid fa-house"></i>
+    </a>
+    
+    <h1 class="marca">Sophis</h1>
+      <hr>
+    <p class="p1">¿ Nuevo en el ciclismo ? Tranquilo! <br> En Sophis encontrarás la más exahustiva selección de
+        productos de ciclismo del momento, información, consejos, y mucho más.</p>
+      <hr>
+  </header>
+  </div>
+
+  <main>
+    <div class="formulario">
+    <br>
+    <br>
+    <h3>Contactanos</h3>
+    <br>
+    <form name="form_contacto" action="action_page.php">
+      <fieldset class="field">
+        <legend>Datos de contacto</legend>
+        
+        <!-- Nombre -->
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="name" class="form-control" placeholder="Ingrese su nombre" >
+        
+        <!-- Apellido -->
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido">
+        
+        <!-- Correo electronico -->
+        <label for="mail">Mail:</label>
+        <input type="email" name="mail" class="form-control" placeholder="Ingrese su mail">
+
+        <!-- Asunto -->
+        <label for="asunto">Asunto: </label>
+        <textarea id="asunto" name="asunto" placeholder="Ingrese el motivo de su contacto">
+        </textarea>
+        
+        <input class="submit" type="submit" value="Enviar" onclick="validacion">
+        
+      </fieldset>
+    </form>
+    </div>
+  </main>
+
+<footer>
+    <!-- Section: Social media -->
+    <section class="redes-sociales">
+
+      <a class="btn btn-outline-light btn-floating" href="#" role="button" target="_blank">.
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating" href="https://twitter.com/i/flow/login" role="button">.
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating" href="https://www.instagram.com/" role="button">.
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating" href="#!" role="button">.
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">.
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </section>
+
+    <!-- Section: Newsletter -->
+    <section class="newsletter">
+      <form action="action_page.php">
+        <div class="formulario">
+          <p class="news">
+            <strong>¿Queres recibir nuestro newsletter? Suscribite</strong>
+          </p>
+          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>  
+          <input type="email" name="mail" id="mail" class="form-control" placeholder="Ingrese su Correo" required>
+          <br>
+          <label class="newsdiario">
+            ¿Queres el news diario?
+            <input type="checkbox" checked="checked" name="subscribe">
+          </label>
+          <label class="newsdiario">
+            ¿Queres solo las novedades del mes?
+            <input type="checkbox" checked="checked" name="subscribe">
+          </label>
+          <input type="submit" value="Enviar" target="_blank">
+        </div>
+      </form>
+      <h3 class="contacto"></h3>
+    </section>
+
+  <!-- Seccion: Copyright -->
+  <section class="copyright">
+  <div class="copytight">
+    © 2023 Copyright: Codo a Codo 2023, comisión "no me acuerdo"
+  </div>
+  </section>
+
+</footer>
+
+</body>
+<script src="main.js"></script>
+</html>
